@@ -27,7 +27,7 @@
     /* 右列文本盒子样式 */
     .text-box {
       border: 1px solid #fffcfc;   /* 边框颜色 */
-      background-color: #ffffff; /* 背景色 */
+      background-color: #c2baba; /* 背景色 */
       padding: 0.5rem;           /* 内边距 */
       margin-bottom: 0.5rem;     /* 上下间距，可调整 */
     }
@@ -72,37 +72,39 @@
     <!-- 样本1 -->
     <div class="sample-box">
       <div class="columns is-vcentered">
-        <div class="column is-one-third has-text-centered">
-          <!-- 单个播放器，上下居中 -->
-          <div class="audio-block" style="display: inline-block;">
+        <!-- 左列 -->
+        <div class="column is-one-third" style="display: flex; justify-content: center; align-items: center;">
+          <!-- 单个播放器 -->
+          <div>
             <span class="audio-label">SCR Audio</span>
-            <audio controls style="width:100%;">
+            <audio controls style="width: 200px; max-width: 100%;">
               <source src="./static/audio/scenario1_sample1_scr.wav" type="audio/wav">
             </audio>
           </div>
         </div>
+        <!-- 右列文本 -->
         <div class="column">
-          <!-- 右列文本盒子 -->
           <div class="text-box"><strong>ASR:</strong> 这是情景1的第一条ASR文本</div>
           <div class="text-box"><strong>意图:</strong> 这是情景1的第一条意图文本</div>
         </div>
       </div>
     </div>
-
+    
     <!-- 样本2 -->
     <div class="sample-box">
       <div class="columns is-vcentered">
-        <div class="column is-one-third has-text-centered">
-          <!-- 单个播放器，上下居中 -->
-          <div class="audio-block" style="display: inline-block;">
+        <!-- 左列 -->
+        <div class="column is-one-third" style="display: flex; justify-content: center; align-items: center;">
+          <!-- 单个播放器 -->
+          <div>
             <span class="audio-label">SCR Audio</span>
-            <audio controls style="width:100%;">
+            <audio controls style="width: 200px; max-width: 100%;">
               <source src="./static/audio/scenario1_sample1_scr.wav" type="audio/wav">
             </audio>
           </div>
         </div>
+        <!-- 右列文本 -->
         <div class="column">
-          <!-- 右列文本盒子 -->
           <div class="text-box"><strong>ASR:</strong> 这是情景1的第一条ASR文本</div>
           <div class="text-box"><strong>意图:</strong> 这是情景1的第一条意图文本</div>
         </div>
@@ -112,21 +114,24 @@
     <!-- 样本3 -->
     <div class="sample-box">
       <div class="columns is-vcentered">
-        <div class="column is-one-third has-text-centered">
-          <!-- 单个播放器，上下居中 -->
-          <div class="audio-block" style="display: inline-block;">
+        <!-- 左列 -->
+        <div class="column is-one-third" style="display: flex; justify-content: center; align-items: center;">
+          <!-- 单个播放器 -->
+          <div>
             <span class="audio-label">SCR Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario1_sample2_scr.wav" type="audio/wav">
+            <audio controls style="width: 200px; max-width: 100%;">
+              <source src="./static/audio/scenario1_sample1_scr.wav" type="audio/wav">
             </audio>
           </div>
         </div>
+        <!-- 右列文本 -->
         <div class="column">
-          <div class="text-box"><strong>ASR:</strong> 这是情景1的第二条ASR文本</div>
-          <div class="text-box"><strong>意图:</strong> 这是情景1的第二条意图文本</div>
+          <div class="text-box"><strong>ASR:</strong> 这是情景1的第一条ASR文本</div>
+          <div class="text-box"><strong>意图:</strong> 这是情景1的第一条意图文本</div>
         </div>
       </div>
     </div>
+
     <!-- 情景1 ------------------------------------------------------------------------------------------>
 
 
