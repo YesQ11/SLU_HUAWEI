@@ -6,6 +6,23 @@
   <title>DOSE+ Samples</title>
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
+  <style>
+    /* 每条样本黑色边框 */
+    .sample-box {
+      border: 2px solid black;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    /* 左列播放器上下间距 */
+    .audio-block {
+      margin-bottom: 0.5rem;
+    }
+    .audio-label {
+      font-weight: bold;
+      margin-bottom: 0.2rem;
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
@@ -15,15 +32,26 @@
 
     <!-- 情景1 -->
     <h2 class="subtitle">情景 1</h2>
-    <div class="box">
-      <!-- 样本1 -->
-      <div class="columns is-vcentered mb-3">
+
+    <!-- 样本1 -->
+    <div class="sample-box">
+      <div class="columns is-vcentered">
+        <!-- 左列: 上下两个播放器 -->
         <div class="column is-one-third">
-          <audio controls>
-            <source src="./static/audio/scenario1_sample1.wav" type="audio/wav">
-            您的浏览器不支持 audio 标签。
-          </audio>
+          <div class="audio-block">
+            <span class="audio-label">SCR Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario1_sample1_scr.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">Enhanced Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario1_sample1_enh.wav" type="audio/wav">
+            </audio>
+          </div>
         </div>
+        <!-- 右列: ASR / Intent -->
         <div class="column">
           <div class="content">
             <p><strong>ASR:</strong> 这是情景1的第一条ASR文本</p>
@@ -31,13 +59,24 @@
           </div>
         </div>
       </div>
-      <!-- 样本2 -->
+    </div>
+
+    <!-- 样本2 -->
+    <div class="sample-box">
       <div class="columns is-vcentered">
         <div class="column is-one-third">
-          <audio controls>
-            <source src="./static/audio/scenario1_sample2.wav" type="audio/wav">
-            您的浏览器不支持 audio 标签。
-          </audio>
+          <div class="audio-block">
+            <span class="audio-label">SCR Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario1_sample2_scr.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">Enhanced Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario1_sample2_enh.wav" type="audio/wav">
+            </audio>
+          </div>
         </div>
         <div class="column">
           <div class="content">
@@ -50,14 +89,23 @@
 
     <!-- 情景2 -->
     <h2 class="subtitle">情景 2</h2>
-    <div class="box">
-      <!-- 样本1 -->
-      <div class="columns is-vcentered mb-3">
+
+    <!-- 样本1 -->
+    <div class="sample-box">
+      <div class="columns is-vcentered">
         <div class="column is-one-third">
-          <audio controls>
-            <source src="./static/audio/scenario2_sample1.wav" type="audio/wav">
-            您的浏览器不支持 audio 标签。
-          </audio>
+          <div class="audio-block">
+            <span class="audio-label">SCR Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario2_sample1_scr.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">Enhanced Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario2_sample1_enh.wav" type="audio/wav">
+            </audio>
+          </div>
         </div>
         <div class="column">
           <div class="content">
@@ -66,13 +114,24 @@
           </div>
         </div>
       </div>
-      <!-- 样本2 -->
+    </div>
+
+    <!-- 样本2 -->
+    <div class="sample-box">
       <div class="columns is-vcentered">
         <div class="column is-one-third">
-          <audio controls>
-            <source src="./static/audio/scenario2_sample2.wav" type="audio/wav">
-            您的浏览器不支持 audio 标签。
-          </audio>
+          <div class="audio-block">
+            <span class="audio-label">SCR Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario2_sample2_scr.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">Enhanced Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario2_sample2_enh.wav" type="audio/wav">
+            </audio>
+          </div>
         </div>
         <div class="column">
           <div class="content">
@@ -85,14 +144,23 @@
 
     <!-- 情景3 -->
     <h2 class="subtitle">情景 3</h2>
-    <div class="box">
-      <!-- 样本1 -->
-      <div class="columns is-vcentered mb-3">
+
+    <!-- 样本1 -->
+    <div class="sample-box">
+      <div class="columns is-vcentered">
         <div class="column is-one-third">
-          <audio controls>
-            <source src="./static/audio/scenario3_sample1.wav" type="audio/wav">
-            您的浏览器不支持 audio 标签。
-          </audio>
+          <div class="audio-block">
+            <span class="audio-label">SCR Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario3_sample1_scr.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">Enhanced Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario3_sample1_enh.wav" type="audio/wav">
+            </audio>
+          </div>
         </div>
         <div class="column">
           <div class="content">
@@ -101,13 +169,24 @@
           </div>
         </div>
       </div>
-      <!-- 样本2 -->
+    </div>
+
+    <!-- 样本2 -->
+    <div class="sample-box">
       <div class="columns is-vcentered">
         <div class="column is-one-third">
-          <audio controls>
-            <source src="./static/audio/scenario3_sample2.wav" type="audio/wav">
-            您的浏览器不支持 audio 标签。
-          </audio>
+          <div class="audio-block">
+            <span class="audio-label">SCR Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario3_sample2_scr.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">Enhanced Audio</span>
+            <audio controls style="width:100%;">
+              <source src="./static/audio/scenario3_sample2_enh.wav" type="audio/wav">
+            </audio>
+          </div>
         </div>
         <div class="column">
           <div class="content">
