@@ -7,33 +7,53 @@
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <style>
-    /* 每条样本黑色边框 */
+    /* ----------------- 公共样式 ----------------- */
     .sample-box {
-      border: 2px solid black;
+      border: 2px solid rgba(88, 89, 91, 0.338);
       padding: 1rem;
       margin-bottom: 1rem;
-    }
-
-    /* 左列播放器上下间距 */
-    .audio-block {
-      margin-bottom: 0.5rem;
     }
     .audio-label {
       font-weight: bold;
       margin-bottom: 0.2rem;
       display: block;
     }
-
-    /* 右列文本盒子样式 */
     .text-box {
-      border: 1px solid #fffcfc;   /* 边框颜色 */
-      background-color: #c2baba; /* 背景色 */
-      padding: 0.5rem;           /* 内边距 */
-      margin-bottom: 0.5rem;     /* 上下间距，可调整 */
+      border: 1px solid #ffffff;
+      background-color: #dbe1e0;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
     }
 
-    /* 如果想调整上下文本间距：
-       修改 .text-box 的 margin-bottom 或 padding */
+    /* ----------------- 情景0 ----------------- */
+    .scenario0 .column.audio-column {
+      display: block;
+    }
+    .scenario0 .audio-block {
+      margin-bottom: 0.5rem;
+    }
+
+    /* ----------------- 情景1 ----------------- */
+    .scenario1 .column.audio-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .scenario1 .audio-block {
+      margin-bottom: 0;
+    }
+    .scenario1 .audio-block audio {
+      width: 200px;
+      max-width: 100%;
+    }
+
+    /* ----------------- 情景2 和 3 ----------------- */
+    .scenario2_3 .column.audio-column {
+      display: block;
+    }
+    .scenario2_3 .audio-block {
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -42,10 +62,10 @@
   <div class="container">
     <h1 class="title">Sample 展示区</h1>
 
-    <!-- 情景0 ------------------------------------------------------------------------------------------>
+    <!-- ================= 情景0 ================= -->
     <h2 class="subtitle">情景 0 - 同一说话人无关音频</h2>
-    <div class="columns">
-      <div class="column">
+    <div class="columns scenario0">
+      <div class="column audio-column">
         <span class="audio-label">待识别音频</span>
         <audio controls style="width:100%;">
           <source src="./static/audio/scenario0_target.wav" type="audio/wav">
@@ -54,7 +74,7 @@
           <p><strong>ASR:</strong> 这里放待识别音频的ASR文本</p>
         </div>
       </div>
-      <div class="column">
+      <div class="column audio-column">
         <span class="audio-label">无关音频</span>
         <audio controls style="width:100%;">
           <source src="./static/audio/scenario0_irrelevant.wav" type="audio/wav">
@@ -64,84 +84,70 @@
         </div>
       </div>
     </div>
-    <!-- 情景0 ------------------------------------------------------------------------------------------>
 
-    <!-- 情景1 ------------------------------------------------------------------------------------------>
+    <!-- ================= 情景1 ================= -->
     <h2 class="subtitle">情景 1</h2>
 
     <!-- 样本1 -->
-    <div class="sample-box">
+    <div class="sample-box scenario1">
       <div class="columns is-vcentered">
-        <!-- 左列 -->
-        <div class="column is-one-third" style="display: flex; justify-content: center; align-items: center;">
-          <!-- 单个播放器 -->
-          <div>
+        <div class="column audio-column">
+          <div class="audio-block">
             <span class="audio-label">SCR Audio</span>
-            <audio controls style="width: 200px; max-width: 100%;">
+            <audio controls>
               <source src="./static/audio/scenario1_sample1_scr.wav" type="audio/wav">
             </audio>
           </div>
         </div>
-        <!-- 右列文本 -->
         <div class="column">
           <div class="text-box"><strong>ASR:</strong> 这是情景1的第一条ASR文本</div>
           <div class="text-box"><strong>意图:</strong> 这是情景1的第一条意图文本</div>
         </div>
       </div>
     </div>
-    
+
     <!-- 样本2 -->
-    <div class="sample-box">
+    <div class="sample-box scenario1">
       <div class="columns is-vcentered">
-        <!-- 左列 -->
-        <div class="column is-one-third" style="display: flex; justify-content: center; align-items: center;">
-          <!-- 单个播放器 -->
-          <div>
+        <div class="column audio-column">
+          <div class="audio-block">
             <span class="audio-label">SCR Audio</span>
-            <audio controls style="width: 200px; max-width: 100%;">
-              <source src="./static/audio/scenario1_sample1_scr.wav" type="audio/wav">
+            <audio controls>
+              <source src="./static/audio/scenario1_sample2_scr.wav" type="audio/wav">
             </audio>
           </div>
         </div>
-        <!-- 右列文本 -->
         <div class="column">
-          <div class="text-box"><strong>ASR:</strong> 这是情景1的第一条ASR文本</div>
-          <div class="text-box"><strong>意图:</strong> 这是情景1的第一条意图文本</div>
+          <div class="text-box"><strong>ASR:</strong> 这是情景1的第二条ASR文本</div>
+          <div class="text-box"><strong>意图:</strong> 这是情景1的第二条意图文本</div>
         </div>
       </div>
     </div>
 
     <!-- 样本3 -->
-    <div class="sample-box">
+    <div class="sample-box scenario1">
       <div class="columns is-vcentered">
-        <!-- 左列 -->
-        <div class="column is-one-third" style="display: flex; justify-content: center; align-items: center;">
-          <!-- 单个播放器 -->
-          <div>
+        <div class="column audio-column">
+          <div class="audio-block">
             <span class="audio-label">SCR Audio</span>
-            <audio controls style="width: 200px; max-width: 100%;">
-              <source src="./static/audio/scenario1_sample1_scr.wav" type="audio/wav">
+            <audio controls>
+              <source src="./static/audio/scenario1_sample3_scr.wav" type="audio/wav">
             </audio>
           </div>
         </div>
-        <!-- 右列文本 -->
         <div class="column">
-          <div class="text-box"><strong>ASR:</strong> 这是情景1的第一条ASR文本</div>
-          <div class="text-box"><strong>意图:</strong> 这是情景1的第一条意图文本</div>
+          <div class="text-box"><strong>ASR:</strong> 这是情景1的第三条ASR文本</div>
+          <div class="text-box"><strong>意图:</strong> 这是情景1的第三条意图文本</div>
         </div>
       </div>
     </div>
 
-    <!-- 情景1 ------------------------------------------------------------------------------------------>
-
-
-    <!-- 情景2 ------------------------------------------------------------------------------------------>
+    <!-- ================= 情景2 ================= -->
     <h2 class="subtitle">情景 2</h2>
 
-    <!-- 样本1 -->
-    <div class="sample-box">
+    <div class="sample-box scenario2_3">
       <div class="columns is-vcentered">
-        <div class="column is-one-third">
+        <div class="column audio-column">
           <div class="audio-block">
             <span class="audio-label">SCR Audio</span>
             <audio controls style="width:100%;">
@@ -162,62 +168,12 @@
       </div>
     </div>
 
-    <!-- 样本2 -->
-    <div class="sample-box">
-      <div class="columns is-vcentered">
-        <div class="column is-one-third">
-          <div class="audio-block">
-            <span class="audio-label">SCR Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario2_sample1_scr.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">Enhanced Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario2_sample1_enh.wav" type="audio/wav">
-            </audio>
-          </div>
-        </div>
-        <div class="column">
-          <div class="text-box"><strong>ASR:</strong> 这是情景2的第一条ASR文本</div>
-          <div class="text-box"><strong>意图:</strong> 这是情景2的第一条意图文本</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 样本3 -->
-    <div class="sample-box">
-      <div class="columns is-vcentered">
-        <div class="column is-one-third">
-          <div class="audio-block">
-            <span class="audio-label">SCR Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario2_sample2_scr.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">Enhanced Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario2_sample2_enh.wav" type="audio/wav">
-            </audio>
-          </div>
-        </div>
-        <div class="column">
-          <div class="text-box"><strong>ASR:</strong> 这是情景2的第二条ASR文本</div>
-          <div class="text-box"><strong>意图:</strong> 这是情景2的第二条意图文本</div>
-        </div>
-      </div>
-    </div>
-    <!-- 情景2 ------------------------------------------------------------------------------------------>
-
-    <!-- 情景3 ------------------------------------------------------------------------------------------>
+    <!-- ================= 情景3 ================= -->
     <h2 class="subtitle">情景 3</h2>
 
-    <!-- 样本1 -->
-    <div class="sample-box">
+    <div class="sample-box scenario2_3">
       <div class="columns is-vcentered">
-        <div class="column is-one-third">
+        <div class="column audio-column">
           <div class="audio-block">
             <span class="audio-label">SCR Audio</span>
             <audio controls style="width:100%;">
@@ -237,55 +193,6 @@
         </div>
       </div>
     </div>
-
-    <!-- 样本2 -->
-    <div class="sample-box">
-      <div class="columns is-vcentered">
-        <div class="column is-one-third">
-          <div class="audio-block">
-            <span class="audio-label">SCR Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario3_sample1_scr.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">Enhanced Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario3_sample1_enh.wav" type="audio/wav">
-            </audio>
-          </div>
-        </div>
-        <div class="column">
-          <div class="text-box"><strong>ASR:</strong> 这是情景3的第一条ASR文本</div>
-          <div class="text-box"><strong>意图:</strong> 这是情景3的第一条意图文本</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 样本3 -->
-    <div class="sample-box">
-      <div class="columns is-vcentered">
-        <div class="column is-one-third">
-          <div class="audio-block">
-            <span class="audio-label">SCR Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario3_sample2_scr.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">Enhanced Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario3_sample2_enh.wav" type="audio/wav">
-            </audio>
-          </div>
-        </div>
-        <div class="column">
-          <div class="text-box"><strong>ASR:</strong> 这是情景3的第二条ASR文本</div>
-          <div class="text-box"><strong>意图:</strong> 这是情景3的第二条意图文本</div>
-        </div>
-      </div>
-    </div>
-    <!-- 情景3 ------------------------------------------------------------------------------------------>
 
   </div>
 </section>
