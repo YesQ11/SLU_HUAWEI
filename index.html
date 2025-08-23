@@ -52,6 +52,11 @@
       width: 100%;
       padding: 0.3rem 0.5rem;
       font-size: 0.9rem;
+
+      /* 以下是高度相关控制 */
+      max-height: 60px;            /* 限制文本框最大高度，超出时会触发滚动条 */
+      overflow-y: auto;            /* 超过 max-height 时出现纵向滚动 */
+      margin-top: 0.3rem;          /* 控制音频播放器与文本框的上下间距 */
     }
 
     /* ----------------- 情景2 和 3 ----------------- */
