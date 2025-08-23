@@ -13,6 +13,7 @@
       padding: 1rem;
       margin-bottom: 1rem;
     }
+
     /* 左列播放器上下间距 */
     .audio-block {
       margin-bottom: 0.5rem;
@@ -22,6 +23,17 @@
       margin-bottom: 0.2rem;
       display: block;
     }
+
+    /* 右列文本盒子样式 */
+    .text-box {
+      border: 1px solid #ccc;   /* 边框颜色 */
+      background-color: #f9f9f9; /* 背景色 */
+      padding: 0.5rem;           /* 内边距 */
+      margin-bottom: 0.5rem;     /* 上下间距，可调整 */
+    }
+
+    /* 如果想调整上下文本间距：
+       修改 .text-box 的 margin-bottom 或 padding */
   </style>
 </head>
 <body>
@@ -30,11 +42,9 @@
   <div class="container">
     <h1 class="title">Sample 展示区</h1>
 
-
     <!-- 情景0 -->
     <h2 class="subtitle">情景 0 - 同一说话人无关音频</h2>
     <div class="columns">
-      <!-- 左列 -->
       <div class="column">
         <span class="audio-label">待识别音频</span>
         <audio controls style="width:100%;">
@@ -44,7 +54,6 @@
           <p><strong>ASR:</strong> 这里放待识别音频的ASR文本</p>
         </div>
       </div>
-      <!-- 右列 -->
       <div class="column">
         <span class="audio-label">无关音频</span>
         <audio controls style="width:100%;">
@@ -55,8 +64,6 @@
         </div>
       </div>
     </div>
-    
-
 
     <!-- 情景1 -->
     <h2 class="subtitle">情景 1</h2>
@@ -64,7 +71,6 @@
     <!-- 样本1 -->
     <div class="sample-box">
       <div class="columns is-vcentered">
-        <!-- 左列: 上下两个播放器 -->
         <div class="column is-one-third">
           <div class="audio-block">
             <span class="audio-label">SCR Audio</span>
@@ -79,16 +85,13 @@
             </audio>
           </div>
         </div>
-        <!-- 右列: ASR / Intent -->
         <div class="column">
-          <div class="content">
-            <p><strong>ASR:</strong> 这是情景1的第一条ASR文本</p>
-            <p><strong>意图:</strong> 这是情景1的第一条意图文本</p>
-          </div>
+          <!-- 右列文本盒子 -->
+          <div class="text-box"><strong>ASR:</strong> 这是情景1的第一条ASR文本</div>
+          <div class="text-box"><strong>意图:</strong> 这是情景1的第一条意图文本</div>
         </div>
       </div>
     </div>
-
 
     <!-- 样本2 -->
     <div class="sample-box">
@@ -108,18 +111,14 @@
           </div>
         </div>
         <div class="column">
-          <div class="content">
-            <p><strong>ASR:</strong> 这是情景1的第二条ASR文本</p>
-            <p><strong>意图:</strong> 这是情景1的第二条意图文本</p>
-          </div>
+          <div class="text-box"><strong>ASR:</strong> 这是情景1的第二条ASR文本</div>
+          <div class="text-box"><strong>意图:</strong> 这是情景1的第二条意图文本</div>
         </div>
       </div>
     </div>
 
     <!-- 情景2 -->
     <h2 class="subtitle">情景 2</h2>
-
-    
 
     <!-- 样本1 -->
     <div class="sample-box">
@@ -139,10 +138,8 @@
           </div>
         </div>
         <div class="column">
-          <div class="content">
-            <p><strong>ASR:</strong> 这是情景2的第一条ASR文本</p>
-            <p><strong>意图:</strong> 这是情景2的第一条意图文本</p>
-          </div>
+          <div class="text-box"><strong>ASR:</strong> 这是情景2的第一条ASR文本</div>
+          <div class="text-box"><strong>意图:</strong> 这是情景2的第一条意图文本</div>
         </div>
       </div>
     </div>
@@ -165,10 +162,8 @@
           </div>
         </div>
         <div class="column">
-          <div class="content">
-            <p><strong>ASR:</strong> 这是情景2的第二条ASR文本</p>
-            <p><strong>意图:</strong> 这是情景2的第二条意图文本</p>
-          </div>
+          <div class="text-box"><strong>ASR:</strong> 这是情景2的第二条ASR文本</div>
+          <div class="text-box"><strong>意图:</strong> 这是情景2的第二条意图文本</div>
         </div>
       </div>
     </div>
@@ -194,10 +189,8 @@
           </div>
         </div>
         <div class="column">
-          <div class="content">
-            <p><strong>ASR:</strong> 这是情景3的第一条ASR文本</p>
-            <p><strong>意图:</strong> 这是情景3的第一条意图文本</p>
-          </div>
+          <div class="text-box"><strong>ASR:</strong> 这是情景3的第一条ASR文本</div>
+          <div class="text-box"><strong>意图:</strong> 这是情景3的第一条意图文本</div>
         </div>
       </div>
     </div>
@@ -220,10 +213,8 @@
           </div>
         </div>
         <div class="column">
-          <div class="content">
-            <p><strong>ASR:</strong> 这是情景3的第二条ASR文本</p>
-            <p><strong>意图:</strong> 这是情景3的第二条意图文本</p>
-          </div>
+          <div class="text-box"><strong>ASR:</strong> 这是情景3的第二条ASR文本</div>
+          <div class="text-box"><strong>意图:</strong> 这是情景3的第二条意图文本</div>
         </div>
       </div>
     </div>
