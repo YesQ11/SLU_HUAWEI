@@ -26,8 +26,8 @@
 
     /* 右列文本盒子样式 */
     .text-box {
-      border: 1px solid #ccc;   /* 边框颜色 */
-      background-color: #f9f9f9; /* 背景色 */
+      border: 1px solid #fffcfc;   /* 边框颜色 */
+      background-color: #ffffff; /* 背景色 */
       padding: 0.5rem;           /* 内边距 */
       margin-bottom: 0.5rem;     /* 上下间距，可调整 */
     }
@@ -42,7 +42,7 @@
   <div class="container">
     <h1 class="title">Sample 展示区</h1>
 
-    <!-- 情景0 -->
+    <!-- 情景0 ------------------------------------------------------------------------------------------>
     <h2 class="subtitle">情景 0 - 同一说话人无关音频</h2>
     <div class="columns">
       <div class="column">
@@ -64,24 +64,20 @@
         </div>
       </div>
     </div>
+    <!-- 情景0 ------------------------------------------------------------------------------------------>
 
-    <!-- 情景1 -->
+    <!-- 情景1 ------------------------------------------------------------------------------------------>
     <h2 class="subtitle">情景 1</h2>
 
     <!-- 样本1 -->
     <div class="sample-box">
       <div class="columns is-vcentered">
-        <div class="column is-one-third">
-          <div class="audio-block">
+        <div class="column is-one-third has-text-centered">
+          <!-- 单个播放器，上下居中 -->
+          <div class="audio-block" style="display: inline-block;">
             <span class="audio-label">SCR Audio</span>
             <audio controls style="width:100%;">
               <source src="./static/audio/scenario1_sample1_scr.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">Enhanced Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario1_sample1_enh.wav" type="audio/wav">
             </audio>
           </div>
         </div>
@@ -96,17 +92,12 @@
     <!-- 样本2 -->
     <div class="sample-box">
       <div class="columns is-vcentered">
-        <div class="column is-one-third">
-          <div class="audio-block">
+        <div class="column is-one-third has-text-centered">
+          <!-- 单个播放器，上下居中 -->
+          <div class="audio-block" style="display: inline-block;">
             <span class="audio-label">SCR Audio</span>
             <audio controls style="width:100%;">
               <source src="./static/audio/scenario1_sample2_scr.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">Enhanced Audio</span>
-            <audio controls style="width:100%;">
-              <source src="./static/audio/scenario1_sample2_enh.wav" type="audio/wav">
             </audio>
           </div>
         </div>
@@ -116,8 +107,10 @@
         </div>
       </div>
     </div>
+    <!-- 情景1 ------------------------------------------------------------------------------------------>
 
-    <!-- 情景2 -->
+
+    <!-- 情景2 ------------------------------------------------------------------------------------------>
     <h2 class="subtitle">情景 2</h2>
 
     <!-- 样本1 -->
@@ -167,8 +160,9 @@
         </div>
       </div>
     </div>
+    <!-- 情景2 ------------------------------------------------------------------------------------------>
 
-    <!-- 情景3 -->
+    <!-- 情景3 ------------------------------------------------------------------------------------------>
     <h2 class="subtitle">情景 3</h2>
 
     <!-- 样本1 -->
@@ -218,6 +212,7 @@
         </div>
       </div>
     </div>
+    <!-- 情景3 ------------------------------------------------------------------------------------------>
 
   </div>
 </section>
