@@ -32,18 +32,21 @@
     .scenario0 .audio-block {
       margin-bottom: 0.5rem;
     }
+    .scenario0 audio {
+      width: 70%; /* <--- 调整这里可以改变情景0播放器长度 */
+    }
 
     /* ----------------- 情景1 ----------------- */
     .scenario1 .column.audio-column {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start; /* <--- 靠左对齐 */
       align-items: center;
     }
     .scenario1 .audio-block {
       margin-bottom: 0;
     }
-    .scenario1 .audio-block audio {
-      width: 300px;
+    .scenario1 audio {
+      width: 250px; /* <--- 调整这里可以让情景1播放器短一些 */
       max-width: 100%;
     }
 
@@ -54,7 +57,12 @@
     .scenario2_3 .audio-block {
       margin-bottom: 0.5rem;
     }
+    .scenario2_3 audio {
+      width: 250px; /* <--- 调整这里可以让情景2和3播放器短一些 */
+      max-width: 100%;
+    }
   </style>
+
 </head>
 <body>
 
