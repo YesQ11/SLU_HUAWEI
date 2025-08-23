@@ -48,7 +48,7 @@
       width: 100%;
     }
     .scenario1 .text-box {
-      background-color: #f0f1f1;
+      background-color: #f7f7f7;
       width: 100%;
       padding: 0.3rem 0.5rem;
       font-size: 0.9rem;
@@ -67,15 +67,15 @@
       width: 100%;
     }
     .scenario2_3 .text-box {
-      background-color: #f0f1f1;
+      background-color: #f7f7f7;   /* 文本框背景色 */
       width: 100%;
-      min-height: 60px;
-      max-height: 120px;
-      padding: 0.6rem 1rem;
-      margin-bottom: 0.7rem;
+      padding: 0.3rem 0.5rem;      /* 控制文字与边框的内边距 */
       font-size: 0.9rem;
-      line-height: 1.5;
-      overflow-y: auto;
+
+      /* 以下是高度相关控制 */
+      max-height: 80px;            /* 限制文本框最大高度，超出时会触发滚动条 */
+      overflow-y: auto;            /* 超过 max-height 时出现纵向滚动 */
+      margin-top: 0.3rem;          /* 控制音频播放器与文本框的上下间距 */
     }
 
   </style>
