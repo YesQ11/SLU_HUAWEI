@@ -3,376 +3,123 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DOSE+</title>
+  <title>DOSE+ Samples</title>
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/icon/web.png">
 </head>
 <body>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <div class="is-flex is-justify-content-center">
-            <img src="./static/icon/dosep_demo.png" alt="Dose Icon" style="max-width: 60%; height: auto;">
-          </div>          
-          <h1 class="title is-2 publication-title">DOSE+: A Timestep-Aware Dropout Strategy for Diffusion Models in Speech Enhancement</h1>
+<section class="section">
+  <div class="container">
+    <h1 class="title">Sample 展示区</h1>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Siqi Yang<sup>1</sup>, </span>
-            <span class="author-block">Jin Wu<sup>1</sup>, </span>
-            <span class="author-block">Yue Lei<sup>1</sup>, </span>
-            <span class="author-block">Wenxin Tai<sup>1</sup>, </span>
-            <span class="author-block">Fan Zhou<sup>1</sup></span>
+    <!-- 情景1 -->
+    <h2 class="subtitle">情景 1</h2>
+    <div class="box">
+      <!-- 样本1 -->
+      <div class="columns is-vcentered mb-3">
+        <div class="column is-one-third">
+          <audio controls>
+            <source src="./static/audio/scenario1_sample1.wav" type="audio/wav">
+            您的浏览器不支持 audio 标签。
+          </audio>
+        </div>
+        <div class="column">
+          <div class="content">
+            <p><strong>ASR:</strong> 这是情景1的第一条ASR文本</p>
+            <p><strong>意图:</strong> 这是情景1的第一条意图文本</p>
           </div>
-
-          <div class="is-size-6">
-            <span class="author-block"><sup>1</sup>University of Electronic Science and Technology of China, Chengdu, Sichuan, China</span>
-          </div>
-
-          <div class="image has-text-centered" style="margin-top: 1.5rem;">
-            <img src="./static/icon/method_v7.png" alt="Method Image" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+      <!-- 样本2 -->
+      <div class="columns is-vcentered">
+        <div class="column is-one-third">
+          <audio controls>
+            <source src="./static/audio/scenario1_sample2.wav" type="audio/wav">
+            您的浏览器不支持 audio 标签。
+          </audio>
+        </div>
+        <div class="column">
+          <div class="content">
+            <p><strong>ASR:</strong> 这是情景1的第二条ASR文本</p>
+            <p><strong>意图:</strong> 这是情景1的第二条意图文本</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- <h2 class="title is-3">Method</h2>
-    <div class="image has-text-centered">
-      <img src="./static/icon/method_v7.png" alt="Method Image" style="max-width: 100%; height: auto;">
-    </div> -->
-    <h2 class="title is-3">Abstract</h2>
-    <div class="content has-text-justified">
-      <p>
-        Diffusion-based speech enhancement (SE) models have recently demonstrated superior performance compared to traditional single-step models. In this work, we revisit the advantages of diffusion models from a multi-source learning perspective, highlighting that their ability to jointly leverage data likelihood and conditional mapping makes them theoretically superior to deterministic models when controllability is ensured. From this standpoint, we identify a key limitation in DOSE, a recent diffusion-based SE model that enhances controllability by applying fixed dropout ratio to non-conditional inputs, leading to unnecessary information loss at every timestep. To address this, we propose a timestep-aware dropout mechanism that dynamically adjusts the dropout intensity at each denoising step. Extensive experiments across matched and cross-dataset benchmarks show that our method consistently outperforms DOSE and other state-of-the-art diffusion-based SE methods, achieving superior speech enhancement with high efficiency. The code and audio samples are publicly available at 
-        <a href="https://github.com/ICDM-UESTC/DOSE" target="_blank">here</a>.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Samples from VBD Dataset</h2>
-
-    <!-- === Sample 1 === -->
-    <!-- <h3 class="title is-5">Sample 1</h3> -->
-    <div class="columns is-multiline">
-      <!-- clean -->
-      <div class="column is-3">
-        <p class="has-text-centered">Clean</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/clean_sample/p257_152.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/clean_sample/p257_152.png" alt="Clean Waveform" style="max-width: 100%;">
+    <!-- 情景2 -->
+    <h2 class="subtitle">情景 2</h2>
+    <div class="box">
+      <!-- 样本1 -->
+      <div class="columns is-vcentered mb-3">
+        <div class="column is-one-third">
+          <audio controls>
+            <source src="./static/audio/scenario2_sample1.wav" type="audio/wav">
+            您的浏览器不支持 audio 标签。
+          </audio>
+        </div>
+        <div class="column">
+          <div class="content">
+            <p><strong>ASR:</strong> 这是情景2的第一条ASR文本</p>
+            <p><strong>意图:</strong> 这是情景2的第一条意图文本</p>
+          </div>
+        </div>
       </div>
-      <!-- noisy -->
-      <div class="column is-3">
-        <p class="has-text-centered">Noisy</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/noisy_sample/p257_152.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/noisy_sample/p257_152.png" alt="Noisy Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dose -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dose_sample/p257_152.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dose_sample/p257_152.png" alt="DOSE Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dosepp -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE+</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dosepp_sample/p257_152.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dosepp_sample/p257_152.png" alt="DOSE+ Waveform" style="max-width: 100%;">
+      <!-- 样本2 -->
+      <div class="columns is-vcentered">
+        <div class="column is-one-third">
+          <audio controls>
+            <source src="./static/audio/scenario2_sample2.wav" type="audio/wav">
+            您的浏览器不支持 audio 标签。
+          </audio>
+        </div>
+        <div class="column">
+          <div class="content">
+            <p><strong>ASR:</strong> 这是情景2的第二条ASR文本</p>
+            <p><strong>意图:</strong> 这是情景2的第二条意图文本</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- === Sample 2 === -->
-    <!-- <h3 class="title is-5">Sample 2</h3> -->
-    <div class="columns is-multiline">
-      <!-- clean -->
-      <div class="column is-3">
-        <p class="has-text-centered">Clean</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/clean_sample/p232_106.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/clean_sample/p232_106.png" alt="Clean Waveform" style="max-width: 100%;">
+    <!-- 情景3 -->
+    <h2 class="subtitle">情景 3</h2>
+    <div class="box">
+      <!-- 样本1 -->
+      <div class="columns is-vcentered mb-3">
+        <div class="column is-one-third">
+          <audio controls>
+            <source src="./static/audio/scenario3_sample1.wav" type="audio/wav">
+            您的浏览器不支持 audio 标签。
+          </audio>
+        </div>
+        <div class="column">
+          <div class="content">
+            <p><strong>ASR:</strong> 这是情景3的第一条ASR文本</p>
+            <p><strong>意图:</strong> 这是情景3的第一条意图文本</p>
+          </div>
+        </div>
       </div>
-      <!-- noisy -->
-      <div class="column is-3">
-        <p class="has-text-centered">Noisy</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/noisy_sample/p232_106.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/noisy_sample/p232_106.png" alt="Noisy Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dose -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dose_sample/p232_106.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dose_sample/p232_106.png" alt="DOSE Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dosepp -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE+</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dosepp_sample/p232_106.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dosepp_sample/p232_106.png" alt="DOSE+ Waveform" style="max-width: 100%;">
-      </div>
-    </div>
-
-    <!-- === Sample 3 === -->
-    <!-- <h3 class="title is-5">Sample 2</h3> -->
-    <div class="columns is-multiline">
-      <!-- clean -->
-      <div class="column is-3">
-        <p class="has-text-centered">Clean</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/clean_sample/p257_319.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/clean_sample/p257_319.png" alt="Clean Waveform" style="max-width: 100%;">
-      </div>
-      <!-- noisy -->
-      <div class="column is-3">
-        <p class="has-text-centered">Noisy</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/noisy_sample/p257_319.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/noisy_sample/p257_319.png" alt="Noisy Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dose -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dose_sample/p257_319.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dose_sample/p257_319.png" alt="DOSE Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dosepp -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE+</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dosepp_sample/p257_319.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dosepp_sample/p257_319.png" alt="DOSE+ Waveform" style="max-width: 100%;">
-      </div>
-    </div>
-
-    <!-- === Sample 4 === -->
-    <!-- <h3 class="title is-5">Sample 2</h3> -->
-    <div class="columns is-multiline">
-      <!-- clean -->
-      <div class="column is-3">
-        <p class="has-text-centered">Clean</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/clean_sample/p257_336.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/clean_sample/p257_336.png" alt="Clean Waveform" style="max-width: 100%;">
-      </div>
-      <!-- noisy -->
-      <div class="column is-3">
-        <p class="has-text-centered">Noisy</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/noisy_sample/p257_336.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/noisy_sample/p257_336.png" alt="Noisy Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dose -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dose_sample/p257_336.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dose_sample/p257_336.png" alt="DOSE Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dosepp -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE+</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dosepp_sample/p257_336.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dosepp_sample/p257_336.png" alt="DOSE+ Waveform" style="max-width: 100%;">
+      <!-- 样本2 -->
+      <div class="columns is-vcentered">
+        <div class="column is-one-third">
+          <audio controls>
+            <source src="./static/audio/scenario3_sample2.wav" type="audio/wav">
+            您的浏览器不支持 audio 标签。
+          </audio>
+        </div>
+        <div class="column">
+          <div class="content">
+            <p><strong>ASR:</strong> 这是情景3的第二条ASR文本</p>
+            <p><strong>意图:</strong> 这是情景3的第二条意图文本</p>
+          </div>
+        </div>
       </div>
     </div>
 
   </div>
 </section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Samples from CHIME-4 Dataset</h2>
-
-    <!-- === Sample 1 === -->
-    <div class="columns is-multiline">
-      <!-- clean -->
-      <div class="column is-3">
-        <p class="has-text-centered">Clean</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/clean_sample/M05_441C0205_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/clean_sample/M05_441C0205_BUS.CH5.png" alt="Clean Waveform" style="max-width: 100%;">
-      </div>
-      <!-- noisy -->
-      <div class="column is-3">
-        <p class="has-text-centered">Noisy</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/noisy_sample/M05_441C0205_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/noisy_sample/M05_441C0205_BUS.CH5.png" alt="Noisy Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dose -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dose_sample/M05_441C0205_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dose_sample/M05_441C0205_BUS.CH5.png" alt="DOSE Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dosepp -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE+</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dosepp_sample/M05_441C0205_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dosepp_sample/M05_441C0205_BUS.CH5.png" alt="DOSE+ Waveform" style="max-width: 100%;">
-      </div>
-    </div>
-
-    <!-- === Sample 2 === -->
-    <div class="columns is-multiline">
-      <!-- clean -->
-      <div class="column is-3">
-        <p class="has-text-centered">Clean</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/clean_sample/M05_447C020D_STR.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/clean_sample/M05_447C020D_STR.CH5.png" alt="Clean Waveform" style="max-width: 100%;">
-      </div>
-      <!-- noisy -->
-      <div class="column is-3">
-        <p class="has-text-centered">Noisy</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/noisy_sample/M05_447C020D_STR.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/noisy_sample/M05_447C020D_STR.CH5.png" alt="Noisy Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dose -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dose_sample/M05_447C020D_STR.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dose_sample/M05_447C020D_STR.CH5.png" alt="DOSE Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dosepp -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE+</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dosepp_sample/M05_447C020D_STR.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dosepp_sample/M05_447C020D_STR.CH5.png" alt="DOSE+ Waveform" style="max-width: 100%;">
-      </div>
-    </div>
-
-    <!-- === Sample 3 === -->
-    <div class="columns is-multiline">
-      <!-- clean -->
-      <div class="column is-3">
-        <p class="has-text-centered">Clean</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/clean_sample/F05_442C020X_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/clean_sample/F05_442C020X_BUS.CH5.png" alt="Clean Waveform" style="max-width: 100%;">
-      </div>
-      <!-- noisy -->
-      <div class="column is-3">
-        <p class="has-text-centered">Noisy</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/noisy_sample/F05_442C020X_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/noisy_sample/F05_442C020X_BUS.CH5.png" alt="Noisy Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dose -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dose_sample/F05_442C020X_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dose_sample/F05_442C020X_BUS.CH5.png" alt="DOSE Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dosepp -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE+</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dosepp_sample/F05_442C020X_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dosepp_sample/F05_442C020X_BUS.CH5.png" alt="DOSE+ Waveform" style="max-width: 100%;">
-      </div>
-    </div>
-
-    <!-- === Sample 4 === -->
-    <div class="columns is-multiline">
-      <!-- clean -->
-      <div class="column is-3">
-        <p class="has-text-centered">Clean</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/clean_sample/M05_440C0203_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/clean_sample/M05_440C0203_BUS.CH5.png" alt="Clean Waveform" style="max-width: 100%;">
-      </div>
-      <!-- noisy -->
-      <div class="column is-3">
-        <p class="has-text-centered">Noisy</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/noisy_sample/M05_440C0203_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/noisy_sample/M05_440C0203_BUS.CH5.png" alt="Noisy Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dose -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dose_sample/M05_440C0203_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dose_sample/M05_440C0203_BUS.CH5.png" alt="DOSE Waveform" style="max-width: 100%;">
-      </div>
-      <!-- dosepp -->
-      <div class="column is-3">
-        <p class="has-text-centered">DOSE+</p>
-        <audio controls style="width: 100%;">
-          <source src="./static/audio/dosepp_sample/M05_440C0203_BUS.CH5.wav" type="audio/wav">
-        </audio>
-        <img src="./static/audio/dosepp_sample/M05_440C0203_BUS.CH5.png" alt="DOSE+ Waveform" style="max-width: 100%;">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <p>This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
-    </div>
-  </div>
-</footer>
 
 </body>
 </html>
