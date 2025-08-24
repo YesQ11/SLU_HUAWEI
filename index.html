@@ -48,7 +48,7 @@
       width: 100%;
     }
     .scenario1 .text-box {
-      background-color: #7a9f42;
+      background-color: #efe5f5;
       width: 100%;
       padding: 0.3rem 0.5rem;
       font-size: 0.9rem;
@@ -127,22 +127,22 @@
           <div class="audio-block">
             <span class="audio-label">Source Audio</span>
             <audio controls>
-              <source src="./static/audio/scenario1_sample1_scr.wav" type="audio/wav">
+              <source src="./static/audio/src_clean/audio--1505407237.wav" type="audio/wav">
             </audio>
           </div>
           <div class="audio-block">
             <span class="audio-label">Inserted Audio</span>
             <audio controls>
-              <source src="./static/audio/scenario1_sample1_inserted.wav" type="audio/wav">
+              <source src="./static/audio/wuguan_clean/audio--1505407237_wuguanyuyin02-TTS1505407237_n7.wav" type="audio/wav">
             </audio>
           </div>
         </div>
         <!-- 右列：oracle、ASR、意图GT、意图结果 -->
         <div class="column">
-          <div class="text-box"><strong>Oracle:</strong> 这是情景1的Oracle文本</div>
-          <div class="text-box"><strong>ASR:</strong> 这是情景1的ASR文本</div>
-          <div class="text-box"><strong>Ground Truth:</strong> 这是情景1的意图Ground Truth</div>
-          <div class="text-box"><strong>Prediction:</strong> 这是情景1的意图结果</div>
+          <div class="text-box"><strong>Oracle:</strong> resume the song from the audiobook by the beatles</div>
+          <div class="text-box"><strong>ASR:</strong> resume the song from the audiobook by the beatles this tomatos are so expensive</div>
+          <div class="text-box"><strong>Ground Truth:</strong> 意图: play_audiobook, 实体: [player_setting=resume, media_type=audiobook, artist_name=beatles]</div>
+          <div class="text-box"><strong>Prediction:</strong> 意图: play_audiobook, 实体: [player_setting=resume, media_type=audiobook, artist_name=beatles]</div>
         </div>
       </div>
     </div>
@@ -194,7 +194,7 @@
         </div>
         <div class="column">
           <div class="text-box"><strong>Oracle:</strong> play a game of contra as a second player</div>
-          <div class="text-box"><strong>ASR:</strong> i will do my homework as soon as possible, play a game of contra as a second player</div>
+          <div class="text-box"><strong>ASR:</strong> i will do my homework as soon as possible play a game of contra as a second player</div>
           <div class="text-box"><strong>Ground Truth:</strong> 意图: play_game, 实体: [game_name=contra]</div>
           <div class="text-box"><strong>Prediction:</strong> 意图: general_quirky, 实体: [ ]</div>
         </div>
