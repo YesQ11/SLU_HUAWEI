@@ -150,17 +150,45 @@
     <!-- 样本2 -->
     <div class="sample-box scenario1">
       <div class="columns is-vcentered">
+        <!-- 左列：源语音、插入后语音 -->
         <div class="column is-one-third">
           <div class="audio-block">
             <span class="audio-label">SCR Audio</span>
             <audio controls>
-              <source src="./static/audio/scenario1_sample2_scr.wav" type="audio/wav">
+              <source src="./static/audio/scenario1_sample1_scr.wav" type="audio/wav">
             </audio>
           </div>
           <div class="audio-block">
             <span class="audio-label">Inserted Audio</span>
             <audio controls>
-              <source src="./static/audio/scenario1_sample2_inserted.wav" type="audio/wav">
+              <source src="./static/audio/scenario1_sample1_inserted.wav" type="audio/wav">
+            </audio>
+          </div>
+        </div>
+        <!-- 右列：oracle、ASR、意图GT、意图结果 -->
+        <div class="column">
+          <div class="text-box"><strong>Oracle:</strong> 这是情景1的Oracle文本</div>
+          <div class="text-box"><strong>ASR:</strong> 这是情景1的ASR文本</div>
+          <div class="text-box"><strong>意图 GT:</strong> 这是情景1的意图Ground Truth</div>
+          <div class="text-box"><strong>意图 Result:</strong> 这是情景1的意图结果</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 样本3 -->
+    <div class="sample-box scenario1">
+      <div class="columns is-vcentered">
+        <div class="column is-one-third">
+          <div class="audio-block">
+            <span class="audio-label">SCR Audio</span>
+            <audio controls>
+              <source src="/home/icdm/ysq11/audio_baselines/SLU/ICDM-SLU/slurp_wuguan_data/wavs/slurp_real/audio--1504190218.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">Inserted Audio</span>
+            <audio controls>
+              <source src="/home/icdm/ysq11/audio_baselines/SLU/ICDM-SLU/slurp_wuguan_data/wuguan_clean/audio--1504190218_wuguanyuyin01-TTS1504190218_n0.wav" type="audio/wav">
             </audio>
           </div>
         </div>
