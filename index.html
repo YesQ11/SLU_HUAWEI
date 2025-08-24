@@ -251,29 +251,27 @@
           <div class="audio-block">
             <span class="audio-label">源语音</span>
             <audio controls>
-              <source src="./static/audio/src_clean/audio--1501778636.wav" type="audio/wav">
+              <source src="./static/audio/src_clean/audio--1504190218.wav" type="audio/wav">
             </audio>
           </div>
           <div class="audio-block">
             <span class="audio-label">插入后语音</span>
             <audio controls>
-              <source src="./static/audio/wuguan_env+voice_enhanced/audio--1501778636_wuguanyuyin03-TTS1501778636_n2.wav" type="audio/wav">
+              <source src="./static/audio/wuguan_env+voice_enhanced/audio--1505407237_wuguanyuyin01-TTS1505407237_n2.wav" type="audio/wav">
             </audio>
           </div>
           <div class="audio-block">
             <span class="audio-label">增强后语音</span>
             <audio controls>
-              <source src="./static/audio/wuguan_env+voice_enhanced/audio--1501778636_wuguanyuyin03-TTS1501778636_n2_enh.wav" type="audio/wav">
+              <source src="./static/audio/wuguan_env+voice_enhanced/audio--1505407237_wuguanyuyin01-TTS1505407237_n2_enh.wav" type="audio/wav">
             </audio>
           </div>
         </div>
         <div class="column">
-          <div class="text-box"><strong>Oracle:</strong> whats the currency exchange rate for china</div>
-          <div class="text-box"><strong>ASR:</strong> whats the currency exchange rate for china</div>
-          <div class="text-box"><strong>Ground Truth:</strong> 意图: qa_currency, 实体: [place_name=china]</div>
-          <div class="text-box"><strong>Prediction:</strong> 意图: general_quirky, 实体: [ ]</div>
-        </div>
-      </div>
+          <div class="text-box"><strong>Oracle:</strong> resume the song from the audiobook by the beatles</div>
+          <div class="text-box"><strong>ASR:</strong> resume the song from the audiobook by the beatles</div>
+          <div class="text-box"><strong>Ground Truth:</strong> 意图: play_audiobook, 实体: [player_setting_resume, media_type=audiobook, artist_name=beatles]</div>
+          <div class="text-box"><strong>Prediction:</strong> 意图: play_audiobook, 实体: [player_setting_resume, media_type=audiobook]</div>
     </div>
 
     <!-- 样本2 -->
@@ -300,10 +298,10 @@
           </div>
         </div>
         <div class="column">
-          <div class="text-box"><strong>Oracle:</strong> whats the currency exchange rate for china</div>
-          <div class="text-box"><strong>ASR:</strong> whats the currency exchange rate for china</div>
-          <div class="text-box"><strong>Ground Truth:</strong> 意图: qa_currency, 实体: [place_name=china]</div>
-          <div class="text-box"><strong>Prediction:</strong> 意图: general_quirky, 实体: [ ]</div>
+          <div class="text-box"><strong>Oracle:</strong> play a game of contra as a second player</div>
+          <div class="text-box"><strong>ASR:</strong> play a game of contra as a second player</div>
+          <div class="text-box"><strong>Ground Truth:</strong> 意图: play_game, 实体: [game_name=contra]</div>
+          <div class="text-box"><strong>Prediction:</strong> 意图: play_game, 实体: [game_name=country a]</div>
         </div>
       </div>
     </div>
