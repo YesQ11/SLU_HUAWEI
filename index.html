@@ -41,10 +41,6 @@
     /* ----------------- 情景0 ----------------- */
     .scenario0 .column {
       display: block;
-      border: 2px solid rgba(88, 89, 91, 0.338); /* 加边框 */
-      border-radius: 10px;                        /* 圆角 */
-      padding: 0.5rem;                            /* 内边距，保证内容不贴边 */
-      margin-bottom: 0.5rem;                      /* 列之间间距 */
     }
     .scenario0 audio {
       width: 85%;
@@ -52,6 +48,14 @@
     .scenario0 .content {
       margin-top: 0.5rem;
     }
+    /* 情景0整体边框 */
+    .scenario0-box {
+      border: 2px solid rgba(88, 89, 91, 0.338); /* 边框颜色和粗细 */
+      border-radius: 10px;                       /* 圆角 */
+      padding: 1rem;                             /* 内边距 */
+      margin-bottom: 1rem;                       /* 下方间距 */
+    }
+
     /* ----------------- 情景1 ----------------- */
     .scenario1 .column.is-one-third {
       display: flex;
@@ -122,23 +126,25 @@
 
     <!-- 情景0 ------------------------------------------------------------------------------------------>
     <h2 class="subtitle mt-2">示例：同一说话人无关语音</h2>
-    <div class="columns scenario0">
-      <div class="column">
-        <span class="audio-label">目标语音</span>
-        <audio controls>
-          <source src="./static/audio/src_clean/audio--1501778636.wav" type="audio/wav">
-        </audio>
-        <div class="content">
-          <p><strong>ASR:</strong> whats the currency exchange rate for china</p>
+    <div class="scenario0-box"> <!-- 新增外层容器 -->
+      <div class="columns scenario0">
+        <div class="column">
+          <span class="audio-label">目标语音</span>
+          <audio controls>
+            <source src="./static/audio/src_clean/audio--1501778636.wav" type="audio/wav">
+          </audio>
+          <div class="content">
+            <p><strong>ASR:</strong> whats the currency exchange rate for china</p>
+          </div>
         </div>
-      </div>
-      <div class="column">
-        <span class="audio-label">TTS无关语音</span>
-        <audio controls>
-          <source src="./static/audio/tts/wuguanyuyin02-TTS1501778636.wav" type="audio/wav">
-        </audio>
-        <div class="content">
-          <p><strong>ASR:</strong> you should store the fruit in the fridge</p>
+        <div class="column">
+          <span class="audio-label">TTS无关语音</span>
+          <audio controls>
+            <source src="./static/audio/tts/wuguanyuyin02-TTS1501778636.wav" type="audio/wav">
+          </audio>
+          <div class="content">
+            <p><strong>ASR:</strong> you should store the fruit in the fridge</p>
+          </div>
         </div>
       </div>
     </div>
