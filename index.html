@@ -144,7 +144,7 @@
         <!-- 右列：oracle、ASR、意图GT、意图结果 -->
         <div class="column">
           <div class="text-box"><strong>Oracle:</strong> resume the song from the audiobook by the beatles</div>
-          <div class="text-box"><strong>ASR:</strong> resume the song from the audiobook by the beatles this tomatos are so expensive</div>
+          <div class="text-box"><strong>ASR:</strong> resume the song from the audiobook by the beatles these tomatos are so expensive</div>
           <div class="text-box"><strong>Ground Truth:</strong> 意图: play_audiobook, 实体: [player_setting=resume, media_type=audiobook, artist_name=beatles]</div>
           <div class="text-box"><strong>Prediction:</strong> 意图: play_audiobook, 实体: [player_setting=resume, media_type=audiobook, artist_name=beatles]</div>
         </div>
@@ -277,10 +277,42 @@
       </div>
     </div>
 
-    <!-- 情景3 ------------------------------------------------------------------------------------------>
+    <!-- 情景4 ------------------------------------------------------------------------------------------>
     <h2 class="subtitle">错例</h2>
 
     <!-- 样本1 -->
+    <div class="sample-box scenario2_3">
+      <div class="columns is-vcentered">
+        <div class="column is-one-third">
+          <div class="audio-block">
+            <span class="audio-label">源语音</span>
+            <audio controls>
+              <source src="./static/audio/src_clean/audio--1505407237.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">插入后语音</span>
+            <audio controls>
+              <source src="./static/audio/wuguan_error/audio--1505407237_wuguanyuyin02-TTS1505407237_n0.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">增强后语音</span>
+            <audio controls>
+              <source src="./static/audio/wuguan_error_enhanced/audio--1505407237_wuguanyuyin02-TTS1505407237_n0_enh.wav" type="audio/wav">
+            </audio>
+          </div>
+        </div>
+        <div class="column">
+          <div class="text-box"><strong>Oracle:</strong> resume the song from the audiobook by the beatles</div>
+          <div class="text-box"><strong>ASR:</strong> these tomatos are so expensive resume the song from the audiobook by the beatles</div>
+          <div class="text-box"><strong>Ground Truth:</strong> 意图: play_audiobook, 实体: [player_setting_resume, media_type=audiobook, artist_name=beatles]</div>
+          <div class="text-box"><strong>Prediction:</strong> 意图: cooking_recipe, 实体: [=food_type=tomato soup]</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 样本2 -->
     <div class="sample-box scenario2_3">
       <div class="columns is-vcentered">
         <div class="column is-one-third">
