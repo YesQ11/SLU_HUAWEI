@@ -93,7 +93,7 @@
     <h1 class="title">Sample 展示区</h1>
 
     <!-- 情景0 ------------------------------------------------------------------------------------------>
-    <h2 class="subtitle">情景 0 - 同一说话人无关音频</h2>
+    <h2 class="subtitle">同一说话人无关音频</h2>
     <div class="columns scenario0">
       <div class="column">
         <span class="audio-label">待识别音频</span>
@@ -105,7 +105,7 @@
         </div>
       </div>
       <div class="column">
-        <span class="audio-label">无关音频</span>
+        <span class="audio-label">TTS无关音频</span>
         <audio controls>
           <source src="./static/audio/scenario0_irrelevant.wav" type="audio/wav">
         </audio>
@@ -117,7 +117,7 @@
     <!-- 情景0 ------------------------------------------------------------------------------------------>
 
     <!-- 情景1 ------------------------------------------------------------------------------------------>
-    <h2 class="subtitle">情景 1</h2>
+    <h2 class="subtitle">不同位置插入无关语音</h2>
 
     <!-- 样本1 -->
     <div class="sample-box scenario1">
@@ -182,13 +182,13 @@
           <div class="audio-block">
             <span class="audio-label">SCR Audio</span>
             <audio controls>
-              <source src="/home/icdm/ysq11/audio_baselines/SLU/ICDM-SLU/slurp_wuguan_data/wavs/slurp_real/audio--1504190218.wav" type="audio/wav">
+              <source src="/home/icdm/ysq11/audio_baselines/SLU/demo_of_SLU_HUAWEI/static/audio/src_clean/audio--1504190218.wav" type="audio/wav">
             </audio>
           </div>
           <div class="audio-block">
             <span class="audio-label">Inserted Audio</span>
             <audio controls>
-              <source src="/home/icdm/ysq11/audio_baselines/SLU/ICDM-SLU/slurp_wuguan_data/wuguan_clean/audio--1504190218_wuguanyuyin01-TTS1504190218_n0.wav" type="audio/wav">
+              <source src="/home/icdm/ysq11/audio_baselines/SLU/demo_of_SLU_HUAWEI/static/audio/wuguan_clean/audio--1504190218_wuguanyuyin01-TTS1504190218_n0.wav" type="audio/wav">
             </audio>
           </div>
         </div>
@@ -202,7 +202,7 @@
     </div>
 
     <!-- 情景2 ------------------------------------------------------------------------------------------>
-    <h2 class="subtitle">情景 2</h2>
+    <h2 class="subtitle">插入无关语音 & 环境噪声</h2>
 
     <!-- 样本1 -->
     <div class="sample-box scenario2_3">
@@ -239,7 +239,42 @@
     </div>
 
     <!-- 情景3 ------------------------------------------------------------------------------------------>
-    <h2 class="subtitle">情景 3</h2>
+    <h2 class="subtitle">插入无关语音 & 环境噪声 & 其他人声</h2>
+
+    <!-- 样本1 -->
+    <div class="sample-box scenario2_3">
+      <div class="columns is-vcentered">
+        <div class="column is-one-third">
+          <div class="audio-block">
+            <span class="audio-label">SCR Audio</span>
+            <audio controls>
+              <source src="./static/audio/scenario3_sample1_scr.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">Inserted Audio</span>
+            <audio controls>
+              <source src="./static/audio/scenario3_sample1_inserted.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">Enhanced Audio</span>
+            <audio controls>
+              <source src="./static/audio/scenario3_sample1_enh.wav" type="audio/wav">
+            </audio>
+          </div>
+        </div>
+        <div class="column">
+          <div class="text-box"><strong>Oracle:</strong> 这是情景3的Oracle文本</div>
+          <div class="text-box"><strong>ASR:</strong> 这是情景3的ASR文本</div>
+          <div class="text-box"><strong>意图 GT:</strong> 这是情景3的意图Ground Truth</div>
+          <div class="text-box"><strong>意图 Result:</strong> 这是情景3的意图结果</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 情景3 ------------------------------------------------------------------------------------------>
+    <h2 class="subtitle">错例</h2>
 
     <!-- 样本1 -->
     <div class="sample-box scenario2_3">
