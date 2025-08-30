@@ -437,6 +437,72 @@
       </div>
     </div>
 
+    <!-- 情景3.5 ------------------------------------------------------------------------------------------>
+    <h2 class="subtitle">场景四：多位置同时插入无关语音 & 环境噪声 & 其他人声</h2>
+    <!-- 样本1 -->
+    <div class="sample-box scenario2_3">
+      <div class="columns is-vcentered">
+        <div class="column is-one-third">
+          <div class="audio-block">
+            <span class="audio-label">源语音</span>
+            <audio controls>
+              <source src="./static/audio/src_clean/audio--1504190218.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">插入后语音</span>
+            <audio controls>
+              <source src="./static/audio/wuguan_insert2/audio--1504190218_mix_try1.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">增强后语音</span>
+            <audio controls>
+              <source src="./static/audio/wuguan_insert2_enhanced/audio--1504190218_mix_try1_enh.wav" type="audio/wav">
+            </audio>
+          </div>
+        </div>
+        <div class="column">
+          <div class="text-box"><strong>Oracle:</strong> play a game of contra as a second player</div>
+          <div class="text-box"><strong>ASR:</strong> play a game or call me i will do my homework as soon as possible i will do my homework as soon as possible</div>
+          <div class="text-box"><strong>Ground Truth:</strong> 意图: play_game, 实体: [game_name=contra]</div>
+          <div class="text-box"><strong>Prediction:</strong> 意图: play_game, 实体: [game_namecricket]</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 样本2 -->
+    <div class="sample-box scenario2_3">
+      <div class="columns is-vcentered">
+        <div class="column is-one-third">
+          <div class="audio-block">
+            <span class="audio-label">源语音</span>
+            <audio controls>
+              <source src="./static/audio/src_clean/audio--1501778636.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">插入后语音</span>
+            <audio controls>
+              <source src="./static/audio/wuguan_insert2/audio--1501778636_mix_try0.wav" type="audio/wav">
+            </audio>
+          </div>
+          <div class="audio-block">
+            <span class="audio-label">增强后语音</span>
+            <audio controls>
+              <source src=".I/static/audio/wuguan_insert2_enhanced/audio--1501778636_mix_try0_enh.wav" type="audio/wav">
+            </audio>
+          </div>
+        </div>
+        <div class="column">
+          <div class="text-box"><strong>Oracle:</strong> whats the currency exchange rate for china</div>
+          <div class="text-box"><strong>ASR:</strong> what is the grand switch i disagree with this thought you should store the fruit in the fridge fruit for china</div>
+          <div class="text-box"><strong>Ground Truth:</strong> 意图: qa_currency, 实体: [place_name=china]</div>
+          <div class="text-box"><strong>Prediction:</strong> 意图: general_quirky, 实体: [ ]<span class="red-text">（归到异常类，即拒识）</span></div>
+        </div>
+      </div>
+    </div>
+
     <!-- 情景4 ------------------------------------------------------------------------------------------>
     <h2 class="subtitle">错例分析</h2>
 
