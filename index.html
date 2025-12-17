@@ -115,7 +115,7 @@
     <h1 class="title">复杂噪声场景下表现</h1>
 
     <!-- 情景1 ------------------------------------------------------------------------------------------>
-    <h2 class="subtitle">场景一：不同位置插入无关语音</h2>
+    <!-- <h2 class="subtitle">场景一：不同位置插入无关语音</h2> -->
 
     <!-- 样本1 -->
     <div class="sample-box scenario1">
@@ -199,77 +199,7 @@
       </div>
     </div>
 
-    <!-- 情景2 ------------------------------------------------------------------------------------------>
-    <h2 class="subtitle">场景二：插入无关语音 & 环境噪声</h2>
-    <!-- 样本1 -->
-    <div class="sample-box scenario2_3">
-      <div class="columns is-vcentered">
-        <!-- 左列：源语音、插入后语音、增强后语音 -->
-        <div class="column is-one-third">
-          <div class="audio-block">
-            <span class="audio-label">源语音</span>
-            <audio controls>
-              <source src="./static/audio/src_clean/audio--1505407237.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">插入后语音</span>
-            <audio controls>
-              <source src="./static/audio/wuguan_env/audio--1505407237_wuguanyuyin01-TTS1505407237_n2.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">增强后语音</span>
-            <audio controls>
-              <source src="./static/audio/wuguan_env_enhanced/audio--1505407237_wuguanyuyin01-TTS1505407237_n2_enh.wav" type="audio/wav">
-            </audio>
-          </div>
-        </div>
-        <!-- 右列：oracle、ASR、意图GT、意图结果 -->
-        <div class="column">
-          <div class="text-box"><strong>Oracle:</strong> resume the song from the audiobook by the beatles</div>
-          <div class="text-box"><strong>ASR:</strong> resume the song from the audiobook sorry wait for me a second someone is calling me bye the beatles</div>
-          <div class="text-box"><strong>Ground Truth:</strong> 意图: play_audiobook, 实体: [player_setting_resume, media_type=audiobook, artist_name=beatles]</div>
-          <div class="text-box"><strong>Prediction:</strong> 意图: play_audiobook, 实体: [player_setting_resume, media_type=audiobook, artist_name=sauni]</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 样本2 -->
-    <div class="sample-box scenario2_3">
-      <div class="columns is-vcentered">
-        <!-- 左列：源语音、插入后语音、增强后语音 -->
-        <div class="column is-one-third">
-          <div class="audio-block">
-            <span class="audio-label">源语音</span>
-            <audio controls>
-              <source src="./static/audio/src_clean/audio--1490264244.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">插入后语音</span>
-            <audio controls>
-              <source src="./static/audio/wuguan_env/audio--1490264244_wuguanyuyin02-TTS1490264244_n7.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">增强后语音</span>
-            <audio controls>
-              <source src="./static/audio/wuguan_env_enhanced/audio--1490264244_wuguanyuyin02-TTS1490264244_n7_enh.wav" type="audio/wav">
-            </audio>
-          </div>
-        </div>
-        <!-- 右列：oracle、ASR、意图GT、意图结果 -->
-        <div class="column">
-          <div class="text-box"><strong>Oracle:</strong> remind me tonight to pick up my dry cleaning at eight pm</div>
-          <div class="text-box"><strong>ASR:</strong> remind me tonight to pick up a clean at eight pm excuse me may i have some water</div>
-          <div class="text-box"><strong>Ground Truth:</strong> 意图: calendar_set, 实体: [event_name=pick up my dry cleaning, time=eight pm]</div>
-          <div class="text-box"><strong>Prediction:</strong> 意图: calendar_set, 实体: [event_name=pick up cleaner, time=eight pm]</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 样本3 -->
+    <!-- 样本4 -->
     <div class="sample-box scenario2_3">
       <div class="columns is-vcentered">
         <!-- 左列：源语音、插入后语音、增强后语音 -->
@@ -303,104 +233,7 @@
       </div>
     </div>
 
-    <!-- 情景3 ------------------------------------------------------------------------------------------>
-    <h2 class="subtitle">场景三：插入无关语音 & 环境噪声 & 其他人声</h2>
-    <!-- 样本1 -->
-    <div class="sample-box scenario2_3">
-      <div class="columns is-vcentered">
-        <div class="column is-one-third">
-          <div class="audio-block">
-            <span class="audio-label">源语音</span>
-            <audio controls>
-              <source src="./static/audio/src_clean/audio--1505407237.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">插入后语音</span>
-            <audio controls>
-              <source src="./static/audio/wuguan_env+voice/audio--1505407237_wuguanyuyin01-TTS1505407237_n2.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">增强后语音</span>
-            <audio controls>
-              <source src="./static/audio/wuguan_env+voice_enhanced/audio--1505407237_wuguanyuyin01-TTS1505407237_n2_enh.wav" type="audio/wav">
-            </audio>
-          </div>
-        </div>
-        <div class="column">
-          <div class="text-box"><strong>Oracle:</strong> resume the song from the audiobook by the beatles</div>
-          <div class="text-box"><strong>ASR:</strong> that was just one night sorry wait for me a second someone is calling me dont do but buy the beatles</div>
-          <div class="text-box"><strong>Ground Truth:</strong> 意图: play_audiobook, 实体: [player_setting_resume, media_type=audiobook, artist_name=beatles]</div>
-          <div class="text-box"><strong>Prediction:</strong> 意图: play_audiobook, 实体: [player_setting_resume, media_type=audiobook]</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 样本2 -->
-    <div class="sample-box scenario2_3">
-      <div class="columns is-vcentered">
-        <div class="column is-one-third">
-          <div class="audio-block">
-            <span class="audio-label">源语音</span>
-            <audio controls>
-              <source src="./static/audio/src_clean/audio--1504190218.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">插入后语音</span>
-            <audio controls>
-              <source src="./static/audio/wuguan_env+voice/audio--1504190218_wuguanyuyin01-TTS1504190218_n5.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">增强后语音</span>
-            <audio controls>
-              <source src="./static/audio/wuguan_env+voice_enhanced/audio--1504190218_wuguanyuyin01-TTS1504190218_n5_enh.wav" type="audio/wav">
-            </audio>
-          </div>
-        </div>
-        <div class="column">
-          <div class="text-box"><strong>Oracle:</strong> play a game of contra as a second player</div>
-          <div class="text-box"><strong>ASR:</strong> play a game of contra as a step i will do my homework as soon as possible it was muchier</div>
-          <div class="text-box"><strong>Ground Truth:</strong> 意图: play_game, 实体: [game_name=contra]</div>
-          <div class="text-box"><strong>Prediction:</strong> 意图: play_game, 实体: [game_name=country a]</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 样本3 -->
-    <div class="sample-box scenario2_3">
-      <div class="columns is-vcentered">
-        <div class="column is-one-third">
-          <div class="audio-block">
-            <span class="audio-label">源语音</span>
-            <audio controls>
-              <source src="./static/audio/src_clean/audio--1501778636.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">插入后语音</span>
-            <audio controls>
-              <source src="./static/audio/wuguan_env+voice/audio--1501778636_wuguanyuyin03-TTS1501778636_n2.wav" type="audio/wav">
-            </audio>
-          </div>
-          <div class="audio-block">
-            <span class="audio-label">增强后语音</span>
-            <audio controls>
-              <source src="./static/audio/wuguan_env+voice_enhanced/audio--1501778636_wuguanyuyin03-TTS1501778636_n2_enh.wav" type="audio/wav">
-            </audio>
-          </div>
-        </div>
-        <div class="column">
-          <div class="text-box"><strong>Oracle:</strong> whats the currency exchange rate for china</div>
-          <div class="text-box"><strong>ASR:</strong> what is it for actually china</div>
-          <div class="text-box"><strong>Ground Truth:</strong> 意图: qa_currency, 实体: [place_name=china]</div>
-          <div class="text-box"><strong>Prediction:</strong> 意图: general_quirky, 实体: [ ]<span class="red-text">（归到异常类，即拒识）</span></div>
-        </div>
-      </div>
-    </div>
-
+    
 
   </div>
 </section>
