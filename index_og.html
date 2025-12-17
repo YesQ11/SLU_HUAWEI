@@ -109,10 +109,46 @@
 </head>
 <body>
 
+<section class="section py-5"> <!-- 上下 padding 改小 -->
+  <div class="container">
+    <h2 class="title is-3">复杂噪声场景构建</h2>
+    <div class="image">
+      <img src="./static/icon/wuguan.png" alt="Example Image" style="max-width: 90%; height: auto;">
+    </div>
+  </div>
+</section>
+
+
 <!--  <section class="section mt-0">  -->
-<section class="section py-5"> 上下 padding 改小
+<section class="section py-5"> <!-- 上下 padding 改小 -->
   <div class="container">
     <h1 class="title">复杂噪声场景下表现</h1>
+
+    <!-- 情景0 ------------------------------------------------------------------------------------------>
+    <h2 class="subtitle mt-2">示例：同一说话人无关语音</h2>
+    <div class="scenario0-box"> <!-- 新增外层容器 -->
+      <div class="columns scenario0">
+        <div class="column">
+          <span class="audio-label">目标语音</span>
+          <audio controls>
+            <source src="./static/audio/src_clean/audio--1501778636.wav" type="audio/wav">
+          </audio>
+          <div class="content">
+            <p><strong>ASR:</strong> whats the currency exchange rate for china</p>
+          </div>
+        </div>
+        <div class="column">
+          <span class="audio-label">TTS无关语音</span>
+          <audio controls>
+            <source src="./static/audio/tts/wuguanyuyin02-TTS1501778636.wav" type="audio/wav">
+          </audio>
+          <div class="content">
+            <p><strong>ASR:</strong> you should store the fruit in the fridge</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 情景0 ------------------------------------------------------------------------------------------>
 
     <!-- 情景1 ------------------------------------------------------------------------------------------>
     <h2 class="subtitle">场景一：不同位置插入无关语音</h2>
